@@ -3,30 +3,55 @@
 }
 
 body {
-  background-color: #dadada;
-  font-size: 16px;
-  font-family: arial;
-  text-transform: uppercase;
+background-color: white;
+}
+.preview {
+  padding: 50px;
+  display: inline-block;
+  height: 300px;
+  width: 80%;
+  background-size: cover;
+}
+.preview.baku {
+  background-image: url('../images/baku.jpg');
+}
+.preview.london {
+  background-image: url('../images/london.png');
+}
+.preview.madrid {
+  background-image: url('../images/madrid.jpg');
+}
+.preview.rome {
+  background-image: url('../images/rome.jpg');
 }
 
 .container {
-  position: relative;
-  margin: 50px auto;
-  width: 90%;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background-color: red;
+  font-size: 20px;
+  margin: 50px;
+  width: 80%;
 }
 
-.preview-baku {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-@media screen and (min-width: 575px){
-   div {
+@media screen and (min-width: 575px) {
+
+    .preview {
+    height: 300px;
     margin: 1%;
-    width: 48%;
-  }
+    width: 40%;
+   }
+
+}
+
+@media screen and (min-width: 991px) {
+
+   .preview {
+    margin: 1%;
+    width: 25%;
+
+    }
+    .preview {
+    margin: 1%;
+    width: 25%;
+    }
+
 }
